@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="game.css">
+    <script type="text/javascript" src="script/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/Box2dWeb-2.1.a.3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/animation.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/mouse.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/entitier.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/levels.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/loader.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/box2d.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/game.js" charset="utf-8"></script>
+</head>
+<body>
+    <div id="gamecontainer">
+        <canvas  id="gamecanvas" class="gamelayer" width="640px" height="480px"></canvas>
+        <div id="scorescreen" class="gamelayer">
+            <img src="images/icons/sound.png" alt="togglemusic">
+            <img src="images/icons/prev.png">
+            <div id="score">score:0</div>
+        </div>
+        <div id="gamestartscreen" class="gamelayer">
+            <img src="images/icons/play.png" alt="play game" onclick="game.showLeveScreen()"><br>
+            <img src="images/icons/settings.png" alt="settings">
+        </div>
+        <div id="levelselectscreen" class="gamelayer">
+
+        </div>
+        <div id="loadingscreen" class="gamelayer">
+            <div id="loadingmessage"></div>
+        </div>
+        <div id="endingscreen" class="gamelayer">
+        </div>
+    </div>
+    <canvas  id="debugcanvas" width="1000px" height="480px" style="border: black solid 1px;margin-top: 5px;"></canvas>
+</body>
+</html>
